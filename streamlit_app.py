@@ -20,7 +20,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 with st.echo(code_location='below'):
     st.title('Columbus Systems')
 
-    path2= "CWTP NF streamlit.xlsx"
+    path2= "/CWTP NF streamlit.xlsx"
     @st.cache
     def load_data(path2):
         df=pd.read_excel(path2,index_col="Recd Date",parse_dates=True)
